@@ -1,0 +1,205 @@
+/* === general === */
+/*#region*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: #232323;
+    height: 100vh;
+}
+/*#endregion*/
+
+/* === page === */
+/*#region*/
+.page {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/background.png");
+    background-size: cover;
+}
+/*#endregion*/
+
+/* === login-card === */
+/*#region*/
+.login-card {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    box-shadow: 0px 2px 12px #222;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.login-card__left-col {
+    width: 55%;
+    height: 100%;
+}
+
+.login-card__right-col {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*#endregion*/
+
+/* === logo-with-background === */
+/*#region*/
+.logo-with-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-with-background__background {
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.logo-with-background__logo {
+    position: absolute;
+    width: 50%;
+}
+/*#endregion*/
+
+/* === login === */
+/*#region*/
+
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+}
+
+.login__title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.login__subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login__signup {
+    margin-top: 15px;
+    align-self: center;
+}
+
+.login__reset-pw {
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+/*#endregion*/
+
+/* === login-form === */
+/*#region*/
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form__input-label {
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+.login-form__submit-button {
+    width: 100%;
+    height: 42px;
+}
+
+.login-form__email-input {
+    margin-bottom: 15px;
+}
+
+.login-form__password-input {
+    margin-bottom: 5px;
+}
+/*#endregion*/
+
+/* === commons === */
+/*#region*/
+.input-field {
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+
+.input-label {
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.button {
+    border: none;
+    background-color: #2568ef;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2568ef;
+    text-decoration: none;
+}
+/*#endregion*/
+
+/* === responsiveness === */
+/*#region*/
+@media screen and (max-width: 1200px) {
+    .login-card {
+        width: 400px;
+        border-radius: 2px;
+    }
+
+    .login-card__left-col {
+        display: none;
+    }
+
+    .login-card__right-col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-card {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: 0px 0px 0px #fff;
+    }
+
+    .page {
+        background-image: url("./assets/logo-background.png");
+    }
+
+    body {
+        color: white;
+    }
+}
+/*#endregion*/

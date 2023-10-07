@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="login-card">
+                <div class="login-card__left-col">
+                    <div class="logo-with-background">
+                        <img
+                            class="logo-with-background__background"
+                            src="./assets/logo-background.png"
+                        />
+                        <img
+                            class="logo-with-background__logo"
+                            src="./assets/logo.png"
+                        />
+                    </div>
+                </div>
+                <div class="login-card__right-col">
+                    <div class="login">
+                        <h1 class="login__title">Login to your Account</h1>
+                        <p class="login__subtitle">Welcome back!</p>
+                        <form class="login-form">
+                            <label
+                                for="email"
+                                class="input-label login-form__input-label"
+                                >Email</label
+                            >
+                            <input
+                                id="email"
+                                name="email"
+                                type="text"
+                                class="input-field login-form__email-input"
+                            />
+                            <label
+                                for="password"
+                                class="input-label login-form__input-label"
+                                >Password</label
+                            >
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                class="input-field login-form__password-input"
+                            />
+                            <a href="#" class="link login__reset-pw"
+                                >Forgot password?</a
+                            >
+                            <input
+                                value="Sign in"
+                                type="button"
+                                class="button login-form__submit-button"
+                            />
+                        </form>
+                        <a href="#" class="link login__signup">Sign Up here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
